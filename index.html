@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HITCON CTF 2014</title>
+        <meta name="description" content="">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="index_files/normalize.css">
+		<link rel="stylesheet" href="index_files/bootstrap.css">
+		<link rel="stylesheet" href="index_files/css.css">
+        <link rel="stylesheet" href="index_files/main.css">
+        
+        <script src="index_files/analytics.js"></script><script src="index_files/modernizr-2.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		<nav id="top-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+                <a class="navbar-brand" href="index.html">HITCON CTF 2014</a>
+                <ul class="nav navbar-nav">
+                    
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="scoreboard.html">Scoreboard</a></li>
+                    <li><a href="trend.html">Trend</a></li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a id="timer" href="#">Contest is over</a>
+                        <input id="contest_start_time" value="1408161600.0" type="hidden">
+                        <input id="contest_end_time" value="1408334400.0" type="hidden">
+                        <input id="current_time" value="1408350059.261665" type="hidden">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        
+<div id="home-masthead">
+	<div class="container">
+		<div class="title">HITCON CTF 2014</div>
+		<div class="subtitle">8/16 12:00 ~ 8/18 12:00 (UTC+8)</div>
+		<div class="subtitle">Registration until 8/17 0:00 (UTC+8)</div>
+		<div class="subtitle">freenode #hitcon-ctf</div>
+		<div class="subtitle">[Announcement] If you didn't receive 
+confirmation mail when registering, please send mail to 
+hitconctfcontact@hitcon.org to finish registration.</div>
+		<form action="dashboard.html">
+			<button id="btn-gotocontest" type="submit" class="btn btn-success btn-lg">Goto Contest</button>
+		</form>
+		
+	</div>
+</div><!-- #home-masthead -->
+
+
+        <div id="content" class="container">
+            
+<div id="contest-info">
+	<h1>HITCON CTF 2014</h1>
+	<div class="col-lg-6">
+
+<p><strong>HITCON Wargame 已舉辦了9年，今年起將有一個重大的改變，未來 HITCON Wargame，正式更名為 
+HITCON 
+CTF，並為了與國際賽事接軌，將不再侷限比賽地點，而改為線上比賽並開放給世界各國好手，期待選手能與世界一流隊伍一較高下。請注意今年比賽日期，將不
+在HITCON會議日期舉辦，而是8/16(六) 12:00 ~ 8/18(一) 12:00 (共48HR)，請留意本網站公布之相關資訊</strong></p>
+
+	</div>
+	<div class="col-lg-6">
+
+<p><strong>HITCON Wargame already has a history of 9 years. From this 
+year, HITCON Wargame will be renamed HITCON CTF. Additionally, in order 
+to get in line with international games, there will no longer be any 
+restrictions on the location of participants. The game will be online 
+and opened to all participants around the world. Please be aware that 
+this year HITCON CTF will not be held at the same time as the 
+conference, instead it will be held from August 16th 12:00 to 18th 
+12:00. (48 hours in total) Please check the latest announcement on 
+official site.</strong></p>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>關卡類型</h2>
+<ul>
+	<li>Pwnable</li>
+	<li>Reverse</li>
+	<li>Web</li>
+	<li>Forensic</li>
+	<li>Cryptography</li>
+	<li>MISC</li>
+</ul>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>Game types</h2>
+<ul>
+	<li>Pwnable</li>
+	<li>Reverse</li>
+	<li>Web</li>
+	<li>Forensic</li>
+	<li>Cryptography</li>
+	<li>MISC</li>
+</ul>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>競賽說明</h2>
+<ul>
+	<li>7/1~8/17 0:00 線上註冊</li>
+	<li>完成登錄後即具備參賽資格，不需額外報名HITCON研討會</li>
+	<li>競賽採取積分累計制，比賽結束後依分數高低判定優勝，提供獎金予優勝者。同分者，依最後一次正確提交的時間判定</li>
+	<li>HITCON CTF 獎金，須前往 HITCON X Playground (2014 年 8 月 21 日 (四) ~ 2014 年 8 月 22 日 (五) )現場領取 。地點: 中央研究院 人文社會科學館 國際會議廳</li>
+	<li>比賽前三名隊伍，每隊提供三個名額免費參加 Playground</li>
+	<li>比賽其他獲獎隊伍：
+		<ul>
+    			<li>若提交 10 分鐘簡報與心得分享，可獲得 2 個 Playground 入場名額，分享的隊伍可另外獲得 HITCON 10 週年鉅獻「HITCON X 駭客攻防桌遊」乙套</li>
+    			<li>若不上台分享，則僅提供 1 名入場名額</li>
+    		</ul>
+	</li>
+	<li>出題關主與工作人員均不列入成績計算</li>
+</ul>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>Contest Information</h2>
+<ul>
+	<li>Online register : 7/1~8/17 0:00 (UTC+8). The registeration link is available on 7/1.</li>
+	<li>You will be a contest participant once you register. You need not register for HITCON sessions.</li>
+	<li>Solving each problem will get certain points. Winners will be 
+ranked by points. There are bonus for winners. If the points are the 
+same, the winners will be ranked by time of the last correct submission.</li>
+	<li>Winning teams are required to attend HITCON X Playground to receive
+ the award of HITCON CTF (August 21 2014 ~ August 22 2014) Location: The
+ Conference Hall of Academia Sinica, Research Center for Humanities and 
+Social Sciences.</li>
+	<li>The first three teams will receive 3 HITCON X Playground tickets each team.</li>
+	<li>For other winning teams:
+		<ul>
+    			<li>Teams who give a 10 minutes presentation and feedback will 
+each receive 2 HITCON X Playground admission tickets, and also a set of 
+HITCON's 10th Anniversary Collection "HITCON X Hacker's Board Game".</li>
+    			<li>Teams without sharing their experience would each receive 1 HITCON X Playground admission ticket.</li>
+		</ul>
+	</li>
+	<li>Game makers and staffs will not be counted in the ranking process.</li>
+</ul>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>競賽時間</h2>
+<p>8/16(六) 12:00 ~ 8/18(一) 12:00 (48HR)</p>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>Contest time</h2>
+<p>August 16th 12:00 ~ 18th 12:00 (UTC+8), 48 hours in total</p>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>獎金</h2>
+<p><em>* 所有獎金需於現場領取</em></p>
+<ul>
+	<li>第一名獎金 NTD 22,000</li>
+	<li>第二名獎金 NTD 15,000</li>
+	<li>第三名獎金 NTD 10,000</li>
+	<li>第四名獎金 NTD 5,000</li>
+	<li>第五名獎金 NTD 5,000</li>
+	<li>第六名獎金 NTD 3,000</li>
+	<li>第七名獎金 NTD 3,000</li>
+	<li>第八名獎金 NTD 2,000</li>
+	<li>第九名獎金 NTD 2,000</li>
+	<li>第十名獎金 NTD 2,000</li>
+</ul>
+<p><strong>得獎隊伍，若於HITCON playground(8/21,22) 研討會的「HITCON CTF頒獎及心得分享」中分享解題心得，每隊可另外獲得HITCON 10週年鉅獻「HITCON X 駭客攻防桌遊」乙套</strong></p>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>Prize</h2>
+<p><em>* All prize are awarded on site</em></p>
+<ul>
+	<li>1st place: NTD 22,000</li>
+	<li>2nd place: NTD 15,000</li>
+	<li>3rd place:  NTD 10,000</li>
+	<li>4th place:  NTD 5,000</li>
+	<li>5th place:  NTD 5,000</li>
+	<li>6th place:  NTD 3,000</li>
+	<li>7th place:  NTD 3,000</li>
+	<li>8th place:  NTD 2,000</li>
+	<li>9th place:  NTD 2,000</li>
+	<li>10th place: NTD 2,000</li>
+</ul>
+<p><strong>Winning teams attending the award ceremony and experience 
+sharing in HITCON playground (Aug. 21-22) will receive one set of 
+“HITCON X Hacker’s Board Game”, celebrating the 10th anniversary of 
+HITCON.</strong></p>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>比賽注意事項</h2>
+<p>競賽期間，做出以下違規事項者將直接取消資格：</p>
+<ul>
+	<li>進行任何破壞競賽公平公正原則之行為</li>
+	<li>散播、與其它隊伍交換關卡金鑰</li>
+	<li>除競賽中提供的關卡外，禁止對競賽系統、參賽者及其它人員進行攻擊</li>
+</ul>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>Contest rules</h2>
+<p>During the contest, any of the following behaviors will lead to disqualification:</p>
+<ul>
+	<li>Any behavior that compromises the fairness of contest</li>
+	<li>Publishing, exchanging problem solutions</li>
+	<li>Attacking any personnel, including participants and non-participants, or the contest system itself</li>
+</ul>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>保留權利</h2>
+<p>主辦單位可依現場狀況調整競賽的內容、流程及規則。</p>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>Rights reserved</h2>
+<p>Organizers may rearrange/modify contest problems, proceedings, and rules.</p>
+
+	</div>
+</div><!-- #contest-info -->
+
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                <p>© 2014 HITCON</p>
+				<p>Contact: hitconctfcontact (at) hitcon.org</p>
+            </div>
+        </div>
+
+		<script src="index_files/jquery-2.js"></script>
+		<script src="index_files/bootstrap.js"></script>
+        <script src="index_files/plugins.js"></script>
+        <script src="index_files/main.js"></script>
+
+        
+        
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-52390402-1');ga('send','pageview');
+        </script>
+    
+
+</body></html>
