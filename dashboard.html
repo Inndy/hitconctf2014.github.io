@@ -2,9 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html style="" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>HITCON CTF 2014</title>
@@ -12,179 +11,46 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="dashboard_files/normalize.css">
-		<link rel="stylesheet" href="dashboard_files/bootstrap.css">
-		<link rel="stylesheet" href="dashboard_files/css.css">
-        <link rel="stylesheet" href="dashboard_files/main.css">
+        <link rel="stylesheet" href="/static/css/normalize.css">
+        <link rel="stylesheet" href="/static/css/bootstrap-3.1.1.min.css">
+        <link rel='stylesheet' href='/static/css/opensans-v9.css'>
+        <link rel="stylesheet" href="/static/css/main.css">
         
-<link rel="stylesheet" href="dashboard_files/jquery.css">
+<link rel="stylesheet" href="/static/js/vendor/fancybox/jquery.fancybox.css">
 <style>
 .fancybox-skin {
-	color: #ccc;
-	background-color: #333;
+    color: #ccc;
+    background-color: #333;
 }
 .fancybox-contents {
-	width: 800px;
-	height: 600px;
+    width: 800px;
+    height: 600px;
 }
 </style>
 
-        <script src="dashboard_files/analytics.js"></script><script src="dashboard_files/modernizr-2.js"></script>
-    <style type="text/css">.fancybox-margin{margin-right:0px;}</style><style class="firebugResetStyles" type="text/css" charset="utf-8">/* See license.txt for terms of usage */
-/** reset styling **/
-.firebugResetStyles {
-    z-index: 2147483646 !important;
-    top: 0 !important;
-    left: 0 !important;
-    display: block !important;
-    border: 0 none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    outline: 0 !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    position: fixed !important;
-    transform: rotate(0deg) !important;
-    transform-origin: 50% 50% !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    background: transparent none !important;
-    pointer-events: none !important;
-    white-space: normal !important;
-}
-style.firebugResetStyles {
-    display: none !important;
-}
-
-.firebugBlockBackgroundColor {
-    background-color: transparent !important;
-}
-
-.firebugResetStyles:before, .firebugResetStyles:after {
-    content: "" !important;
-}
-/**actual styling to be modified by firebug theme**/
-.firebugCanvas {
-    display: none !important;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-.firebugLayoutBox {
-    width: auto !important;
-    position: static !important;
-}
-
-.firebugLayoutBoxOffset {
-    opacity: 0.8 !important;
-    position: fixed !important;
-}
-
-.firebugLayoutLine {
-    opacity: 0.4 !important;
-    background-color: #000000 !important;
-}
-
-.firebugLayoutLineLeft, .firebugLayoutLineRight {
-    width: 1px !important;
-    height: 100% !important;
-}
-
-.firebugLayoutLineTop, .firebugLayoutLineBottom {
-    width: 100% !important;
-    height: 1px !important;
-}
-
-.firebugLayoutLineTop {
-    margin-top: -1px !important;
-    border-top: 1px solid #999999 !important;
-}
-
-.firebugLayoutLineRight {
-    border-right: 1px solid #999999 !important;
-}
-
-.firebugLayoutLineBottom {
-    border-bottom: 1px solid #999999 !important;
-}
-
-.firebugLayoutLineLeft {
-    margin-left: -1px !important;
-    border-left: 1px solid #999999 !important;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-.firebugLayoutBoxParent {
-    border-top: 0 none !important;
-    border-right: 1px dashed #E00 !important;
-    border-bottom: 1px dashed #E00 !important;
-    border-left: 0 none !important;
-    position: fixed !important;
-    width: auto !important;
-}
-
-.firebugRuler{
-    position: absolute !important;
-}
-
-.firebugRulerH {
-    top: -15px !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 14px !important;
-    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
-    border-top: 1px solid #BBBBBB !important;
-    border-right: 1px dashed #BBBBBB !important;
-    border-bottom: 1px solid #000000 !important;
-}
-
-.firebugRulerV {
-    top: 0 !important;
-    left: -15px !important;
-    width: 14px !important;
-    height: 100% !important;
-    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
-    border-left: 1px solid #BBBBBB !important;
-    border-right: 1px solid #000000 !important;
-    border-bottom: 1px dashed #BBBBBB !important;
-}
-
-.overflowRulerX > .firebugRulerV {
-    left: 0 !important;
-}
-
-.overflowRulerY > .firebugRulerH {
-    top: 0 !important;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-.fbProxyElement {
-    position: fixed !important;
-    pointer-events: auto !important;
-}
-</style></head>
+        <script src="/static/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-		<nav id="top-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="container">
-                <a class="navbar-brand" href="index.html">HITCON CTF 2014</a>
+        <nav id="top-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="/">HITCON CTF 2014</a>
                 <ul class="nav navbar-nav">
                     
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="scoreboard.html">Scoreboard</a></li>
-                    <li><a href="trend.html">Trend</a></li>
+                    <li><a href="/dashboard.html">Dashboard</a></li>
+                    <li><a href="/scoreboard.html">Scoreboard</a></li>
+                    <li><a href="/trend.html">Trend</a></li>
                     
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a id="timer" href="#">Contest is over</a>
-                        <input id="contest_start_time" value="1408161600.0" type="hidden">
-                        <input id="contest_end_time" value="1408334400.0" type="hidden">
-                        <input id="current_time" value="1408348373.714306" type="hidden">
+                        <a id="timer" href="#"></a>
+                        <input type="hidden" id="contest_start_time" value="1408161600.0">
+                        <input type="hidden" id="contest_end_time" value="1408334400.0">
+                        <input type="hidden" id="current_time" value="1408464787.991059">
                     </li>
                 </ul>
             </div>
@@ -198,745 +64,30 @@ style.firebugResetStyles {
 <div class="col-lg-9">
 
 <div id="dashboard-announcements">
-  <ul><li><a href="javascript:void(0)">2014-08-18 02:26:45 UTC: More details to the flag of puzzle</a><div style="display: none;">HITCON{lllluuul_luul_udd} lowercase / uppercase / digit</div></li><li><a href="javascript:void(0)">2014-08-18 01:35:01 UTC: breath 250 -&gt; 350 pts</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-17 22:27:31 UTC: PYFMT - add more easy binary :P</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-17 17:27:02 UTC: Add more details about polyglot</a><div style="display: none;">See hint.</div></li><li><a href="javascript:void(0)">2014-08-17 16:56:22 UTC: ducky has been fixed</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-17 16:50:01 UTC: ducky has some problem now</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-17 14:49:54 UTC: About unsolvable 24</a><div style="display: none;">It's solvable. If it seems not, you are playing different game with us.
-</div></li><li><a href="javascript:void(0)">2014-08-17 14:02:19 UTC: wtf6 - score change from 400 to 500</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-17 13:00:54 UTC: PUSHIN CAT - The  flag is file based. Try to get shell :P</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-17 11:18:50 UTC: About finger</a><div style="display: none;">Seems
- the author has made a mistake, this task become too easy and 500pts is 
-toooooo much. We are going to release new version and adjust the score.</div></li><li><a href="javascript:void(0)">2014-08-17 06:20:51 UTC: HINT for wtf6</a><div style="display: none;">HAPPY BIRTHDAY</div></li><li><a href="javascript:void(0)">2014-08-17 05:31:08 UTC: pyfmt difficulty reduce and binary available</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-17 04:53:42 UTC: G8LA - If you have problem in submission flag, contact admin</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-17 01:04:24 UTC: EASYINJ up again and CHANGE URL to http://54.238.22.67:10653/</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-17 00:58:34 UTC: 'mid' shows execution time now</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-17 00:46:46 UTC: If you have problems to submit 'mid', please pm admin.</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-16 23:19:43 UTC: EASYINJ - We will add protections for some scripts</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-16 22:09:01 UTC: wtf6 300 -&gt; 400</a><div style="display: none;">Keep try! It's a traditional attack method!
-</div></li><li><a href="javascript:void(0)">2014-08-16 22:01:28 UTC: More hint and details for 'mid' released</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-16 21:41:46 UTC: UPDATE, PYFMT environment change and reboot</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-16 21:30:20 UTC: sha1lcode 250 -&gt; 300</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-16 19:23:57 UTC: Last update of mid</a><div style="display: none;">This is the last time. Sorry for the inconvenience. We will not change judge or test cases anymore. </div></li><li><a href="javascript:void(0)">2014-08-16 19:02:57 UTC: Memory limit of 'mid' has changed.</a><div style="display: none;">The origin limit is too easy (and boring) so it becomes harder.</div></li><li><a href="javascript:void(0)">2014-08-16 18:47:10 UTC: Flag of mid updated</a><div style="display: none;">Since the judge server has some bug, the flag may be capture in wrong way.
-We have change the flag. Please resubmit your source code to get the new one.
-</div></li><li><a href="javascript:void(0)">2014-08-16 12:45:28 UTC: G8LA - the password we want is `FLAG` 's password</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-16 07:53:52 UTC: LEENODE now worth 250 pts</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-16 06:08:12 UTC: Announcement for LEENODE</a><div style="display: none;">Brute-forcing is not allow, or we will ban your IP
-And 118.165.236.217,50.116.8.239 is not in the attack scope
-( It is just license expired :( )</div></li><li><a href="javascript:void(0)">2014-08-16 05:57:43 UTC: Problem with email confirmation when registering</a><div style="display: none;">If
- you didn't receive confirmation mail when registering, please send mail
- to hitconctfcontact@hitcon.org to finish registration.</div></li><li><a href="javascript:void(0)">2014-08-16 05:15:22 UTC: submission system is up</a><div style="display: none;">WTF goto fail.</div></li><li><a href="javascript:void(0)">2014-08-16 05:01:52 UTC: rsbo binary has updated</a><div style="display: none;">rsbo-4a707e7d07e87ab97348be36efea28dc
-Make sure that you have correct version.</div></li><li><a href="javascript:void(0)">2014-08-16 04:06:16 UTC: Flag Submission</a><div style="display: none;">The submission system has some problem now. We are fixing it.
-</div></li><li><a href="javascript:void(0)">2014-08-15 15:21:06 UTC: Server maintenance at 15:30 UTC. Some errors may occur.</a><div style="display: none;"> </div></li><li><a href="javascript:void(0)">2014-08-15 11:23:41 UTC: IRC Channel freenode.net #hitcon-ctf</a><div style="display: none;">IRC Channel
-irc.freenode.net #hitcon-ctf</div></li></ul>
+  <ul></ul>
 </div>
 
 <div id="dashboard-problems">
-
-
-
-<ul id="problem-list">
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">PUSHIN CAT</span><br>
-				<span class="tags">Web</span>
-			</p></div>
-			<div class="description"><p>http://203.66.14.60/</p></div>
-			<div class="hint"><p>The flag is file based. Try to get shell :P</p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-PUSHINCAT">
-				350
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">LEENODE</span><br>
-				<span class="tags">Web</span>
-			</p></div>
-			<div class="description"><p>http://203.66.57.98/</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-LEENODE">
-				250
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">vash</span><br>
-				<span class="tags">Trivia</span>
-			</p></div>
-			<div class="description"><p>Find out the flag. It should be there, you know.<br>nc 203.66.57.167 31337</p></div>
-			<div class="hint"><p>Most (but not all) challenge's environment is same as this one. </p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-vash">
-				10
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">PY4H4SHER</span><br>
-				<span class="tags">Web</span>
-			</p></div>
-			<div class="description"><p>http://203.66.14.43/cgi-bin/py4h4sher</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-PY4H4SHER">
-				200
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">puzzle</span><br>
-				<span class="tags">Puzzle</span>
-			</p></div>
-			<div class="description"><p>https://raw.githubusercontent.com/hitcon2014ctf/ctf/master/puzzle-81c5e9bdb219efbe4eb9b194fb33f7e6.jpg<br>https://dl.dropbox.com/s/wh0uset031ivgsq/puzzle-81c5e9bdb219efbe4eb9b194fb33f7e6.jpg</p></div>
-			<div class="hint"><p>If you have found the flag but it contains characters hard to recognize, pm admin and get correct flag.</p>
-
-<p>Q: Hey I can see "HITCON{" prefix, is that enough?<br>A: No, you can and have to extract more.</p>
-
-<p>Flag Format: HITCON{lllluuul_luul_udd}<br>lowercase / uppercase / digit</p>
-
-<p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-puzzle">
-				150
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">G8LA</span><br>
-				<span class="tags">Forensics</span>
-			</p></div>
-			<div class="description"><p>The flag format is HITCON{md5(PASSWORD).lower()}.<br>https://raw.githubusercontent.com/hitcon2014ctf/ctf/master/ggyy-99b3ed3ed5e2a293c697784ac94ee8c6.pcap<br>https://www.dropbox.com/s/d6bpgcsk1flbfyt/ggyy-99b3ed3ed5e2a293c697784ac94ee8c6.pcap</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-G8LA">
-				150
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">PYFMT</span><br>
-				<span class="tags">Pwnable</span>
-			</p></div>
-			<div class="description"><p>pwn 54.92.19.227 8212</p></div>
-			<div class="hint"><p>https://raw.githubusercontent.com/hitcon2014ctf/ctf/master/pyfmt_easy-9da3aa531c4f9c5e8a11dfd0459b11e2.tar.gz<br>https://dl.dropbox.com/s/wd6qeifygvf2lmh/pyfmt_easy-9da3aa531c4f9c5e8a11dfd0459b11e2.tar.gz</p>
-
-<p>easy ver 2<br>https://dl.dropbox.com/s/kq7klsrw7wzk3qn/pyfmt_easy-e13e6f82378751f7e909e4ae18676aa3.tar.gz<br></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-PYFMT">
-				152
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">DIAGCGI</span><br>
-				<span class="tags">Web</span>
-			</p></div>
-			<div class="description"><p>http://54.92.127.128:16888/<br></p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-DIAGCGI">
-				68
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">overthere</span><br>
-				<span class="tags">Misc</span>
-			</p></div>
-			<div class="description"><p>nc 210.65.11.5 4994</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-overthere">
-				179
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">ty</span><br>
-				<span class="tags">Pwnable</span>
-			</p></div>
-			<div class="description"><p>nc 210.71.253.109 9123<br>https://github.com/hitcon2014ctf/ctf/raw/master/ty/ty-b83f0d0edeb8cfad76d30eddc58da139<br>https://dl.dropbox.com/s/96bzdejxwvpnimj/ty-b83f0d0edeb8cfad76d30eddc58da139</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-ty">
-				150
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">callme</span><br>
-				<span class="tags">Pwnable</span>
-			</p></div>
-			<div class="description"><p>nc 203.66.57.148 9527<br>https://raw.githubusercontent.com/hitcon2014ctf/ctf/master/callme-69d26b77eb41e4eeba1d7b8402a8b165<br>https://dl.dropbox.com/s/32agxy7q3g4y2ow/callme-69d26b77eb41e4eeba1d7b8402a8b165</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-callme">
-				350
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">girby</span><br>
-				<span class="tags">Reverse</span>
-			</p></div>
-			<div class="description"><p>https://raw.githubusercontent.com/hitcon2014ctf/ctf/master/girby-86c7d5a294f9b8d67b2dc614ff143b70<br>https://dl.dropbox.com/s/ucgye5aroyqtswg/girby-86c7d5a294f9b8d67b2dc614ff143b70</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-girby">
-				450
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">ducky</span><br>
-				<span class="tags">Crazy</span>
-			</p></div>
-			<div class="description"><p>http://210.61.2.93:9008</p></div>
-			<div class="hint"><p>The environment is same as challenge "vash"</p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-ducky">
-				250
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">24</span><br>
-				<span class="tags">Game</span>
-			</p></div>
-			<div class="description"><p>Let's play a game!<br>nc 210.65.89.59 2424</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-24">
-				256
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">rsbo</span><br>
-				<span class="tags">Pwnable</span>
-			</p></div>
-			<div class="description"><p>nc 210.61.8.96 51342<br>https://github.com/hitcon2014ctf/ctf/raw/master/rsbo-4a707e7d07e87ab97348be36efea28dc<br>https://dl.dropbox.com/s/ydsuwrxv7soj0je/rsbo-4a707e7d07e87ab97348be36efea28dc<br></p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-rsbo">
-				150
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">badger</span><br>
-				<span class="tags">Misc</span>
-			</p></div>
-			<div class="description"><p>http://youtu.be/8hDz97kEK_s</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-badger">
-				128
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">Pneumotoulthamicrescopicfilicoloaganiconissis</span><br>
-				<span class="tags">Trivia</span>
-			</p></div>
-			<div class="description"><p>https://raw.githubusercontent.com/hitcon2014ctf/ctf/master/Pneumotoulthamicrescopicfilicoloaganiconissis-df5bb3d8f83d6d37e16560062cb231bc.txt<br>https://dl.dropbox.com/s/c90ozt18mxmriko/Pneumotoulthamicrescopicfilicoloaganiconissis-df5bb3d8f83d6d37e16560062cb231bc.txt</p></div>
-			<div class="hint"><p>diff the file content and the origin english word (try to find it out)</p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-Pneu">
-				80
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">sha1lcode</span><br>
-				<span class="tags">Shellcode</span>
-			</p></div>
-			<div class="description"><p>Pwn this and cat the flag.</p>
-
-<p>nc 210.61.2.51 5566<br>https://raw.githubusercontent.com/hitcon2014ctf/ctf/master/sha1lcode-5b43cc13b0fb249726e0ae175dbef3fe<br>https://dl.dropbox.com/s/gkng3jqe94sdrxy/sha1lcode-5b43cc13b0fb249726e0ae175dbef3fe</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-sha1lcode">
-				300
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">Tarmful</span><br>
-				<span class="tags">Trivia</span>
-			</p></div>
-			<div class="description"><p>Just decompress them all.<br>https://raw.githubusercontent.com/hitcon2014ctf/ctf/master/tarmful-3f13b82f7794de783adfd6fa9928ad2c.zip<br>https://dl.dropbox.com/s/oh8cb6i63x7zggh/tarmful-3f13b82f7794de783adfd6fa9928ad2c.zip</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-tarmful">
-				128
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">EASYINJ</span><br>
-				<span class="tags">Web</span>
-			</p></div>
-			<div class="description"><p>http://54.238.22.67:10653/</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-EASYINJ">
-				300
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">hop</span><br>
-				<span class="tags">Reverse</span>
-			</p></div>
-			<div class="description"><p>https://github.com/hitcon2014ctf/ctf/raw/master/hop/hop-62fa7ade9a1fa9254361e69d70e7a7e3.exe<br>https://dl.dropbox.com/s/5l4q7iztyfhc8c1/hop-62fa7ade9a1fa9254361e69d70e7a7e3.exe<br></p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-hop">
-				350
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">maze</span><br>
-				<span class="tags">Game</span>
-			</p></div>
-			<div class="description"><p>Capture the flag in the maze!<br>telnet 210.71.253.213 8473</p></div>
-			<div class="hint"><p>If you have found the flag but get wrong flag response ... read it carefully, or just pm admin.</p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-maze">
-				250
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">finger</span><br>
-				<span class="tags">Crypto</span>
-			</p></div>
-			<div class="description"><p>Are you lucky enough?<br>https://raw.githubusercontent.com/hitcon2014ctf/ctf/master/finger-9312e72601ff37116dd1e201e9508dbb.rb<br>https://dl.dropbox.com/s/oh5yuu25qj7a8ih/finger-9312e72601ff37116dd1e201e9508dbb.rb<br>nc 210.71.253.236 7171</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-finger">
-				200
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">PYCMD</span><br>
-				<span class="tags">Pwnable</span>
-			</p></div>
-			<div class="description"><p>cmd.exe (/noexecute:alwaysoff)<br>pwn 54.64.1.14 8361</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-PYCMD">
-				250
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">rsaha</span><br>
-				<span class="tags">Crypto</span>
-			</p></div>
-			<div class="description"><p>Can you break RSA?<br>https://dl.dropbox.com/s/xqkoamfvas1rdb7/rsaha-fe50cf1bcae41e8ec6eeebccf3f0de7c.py<br>http://ctf.tw/rsaha-fe50cf1bcae41e8ec6eeebccf3f0de7c.py<br>nc 54.64.40.172 5454</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-rsaha">
-				200
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">mid</span><br>
-				<span class="tags">ACM</span>
-			</p></div>
-			<div class="description"><p>Problem A</p>
-
-<p>http://54.64.29.164:32384/</p></div>
-			<div class="hint"><p>gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1)<br>gcc -O2 -static source.c<br>Read input from stdin and write output to stdout.<br>Single test case in each file, but test several times on multiple file.</p>
-
-<p>It's a CTF challange, you may need a interesting trick to solve it.<br>Both setrlimit &amp; cgroup is used.<br>(memory.limit_in_bytes, memory.swappiness, RLIMIT_AS)</p>
-
-<p>No temp file is allowed. In fact, it's chroot to an read-only empty directory.<br>No socket, IPC, so you can't send the test data out.<br>Number of process limit to 8.<br>All syscall is allowed.</p>
-
-<p>You need to STEAL MORE MEMORY, but how? where?<br></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-mid">
-				250
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">polyglot</span><br>
-				<span class="tags">Crazy</span>
-			</p></div>
-			<div class="description"><p>Just `cat flag`<br>http://210.61.2.47:8192/</p></div>
-			<div class="hint"><p>Similar to DEFCON 22 quals polyglot, but ...</p>
-
-<p>Judge command:<br>/usr/bin/python2.7 temp.py 2&gt;/dev/null<br>/usr/bin/python3.4 temp.py 2&gt;/dev/null<br>/usr/bin/gcc temp.c -o tempexe 2&gt;/dev/null &amp;&amp; tempexe 2&gt;/dev/null<br>/usr/bin/ruby temp.rb 2&gt;/dev/null<br>/usr/bin/runhaskell temp.hs 2&gt;/dev/null<br></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-polyglot">
-				500
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">wtf6</span><br>
-				<span class="tags">Crypto</span>
-			</p></div>
-			<div class="description"><p>Can you break both MD5 and SHA1 simultaneously?<br>nc 210.61.8.97 6666<br>https://raw.githubusercontent.com/hitcon2014ctf/ctf/master/wtf6-fe0677d1eb5a03701b2afb8398b9a70e.rb<br>https://dl.dropbox.com/s/jivlfnuqerdxxk9/wtf6-fe0677d1eb5a03701b2afb8398b9a70e.rb</p></div>
-			<div class="hint"><p>HAPPY BIRTHDAY</p>
-
-<p>celebrate your birthday cleverly, or buy more rams as birthday gift</p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-wtf6">
-				500
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">de</span><br>
-				<span class="tags">Strange</span>
-			</p></div>
-			<div class="description"><p>Use "nc 54.64.27.35 8000" to get your ssh account on this server(54.64.27.35).</p>
-
-<p>There is a key under /home/de/key, and the flag is HITCON{key}.</p>
-
-<p>https://github.com/hitcon2014ctf/ctf/raw/master/62b6b6a8a19a89a3c33801520e0e8b58-de</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-de">
-				450
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">stkof</span><br>
-				<span class="tags">Pwnable</span>
-			</p></div>
-			<div class="description"><p>nc 54.64.45.35 3573</p>
-
-<p>https://github.com/hitcon2014ctf/ctf/raw/master/a679df07a8f3a8d590febad45336d031-stkof</p></div>
-			<div class="hint"><p>System Information:<br>Hardware: EC2 r3.2xlarge<br>Environment: default Ubuntu 14.04 x64</p>
-
-<p>BTW, also the EC2 server is strong, we still set alarm and cgroup 
-memory to prevent DoS attack. Don't be surprised if your connection be 
-closed unexceptedly.</p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-stkof">
-				550
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">breath</span><br>
-				<span class="tags">Forensics</span>
-			</p></div>
-			<div class="description"><p>http://raw.githubusercontent.com/hitcon2014ctf/ctf/master/breath-a680604456efc02ebaa7ad4f53540efe.zip<br>https://dl.dropbox.com/s/f8ktjk2tpbe6yg3/breath-a680604456efc02ebaa7ad4f53540efe.zip</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-breath">
-				350
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	
-	<li class="problem-entry unlocked">
-		<div class="problem-info">
-			<div class="title"><p>
-				<span class="tititle">ginger</span><br>
-				<span class="tags">Crypto</span>
-			</p></div>
-			<div class="description"><p>Are you lucky enough?<br>nc 210.71.253.236 7979<br>https://raw.githubusercontent.com/hitcon2014ctf/ctf/master/ginger-350e951738280de084cf87d9070356e6.rb</p></div>
-			<div class="hint"><p></p></div>
-		</div>
-		<ul class="flag-list">
-			
-			<li id="flag-id-ginger">
-				400
-			</li>
-			
-		</ul>
-		<div class="clearfix"></div>
-	
-	</li>
-	
-	<li class="clearfix"></li>
-</ul>
-
-
 </div>
+
+<!--<div id="dashboard-submit">
+    <div class="form-group">
+        <input type="text" class="form-control" id="flag" placeholder="Submit flag here...">
+    </div>
+    <div class="form-group">
+        <button type="button" class="btn btn-default" id="flag_submit_button">Submit</button>
+        <span id="submit-status"></span>
+    </div>
+</div>-->
 
 </div><!-- .col-lg-9 -->
 <div class="col-lg-3">
 
 <div id="dashboard-scoreboard">
-	<table id="mini-scoreboard">
-		<tbody><tr class="entry"><td>fuzzi3</td><td>5249</td></tr><tr class="entry"><td>Dragon Sector</td><td>5151</td></tr><tr class="entry"><td>9447</td><td>4949</td></tr><tr class="entry"><td>penthackon</td><td>4871</td></tr><tr class="entry"><td>blue-lotus</td><td>4749</td></tr><tr class="entry"><td>0ops</td><td>4592</td></tr><tr class="entry"><td>tomcr00se</td><td>4421</td></tr><tr class="entry"><td>More Smoked Leet Chicken</td><td>4149</td></tr><tr class="entry"><td>BambooFox</td><td>3620</td></tr><tr class="entry"><td>PPP</td><td>3615</td></tr><tr class="entry"><td>CLGT</td><td>3571</td></tr><tr class="entry"><td>Tasteless</td><td>3571</td></tr><tr class="entry"><td>HackingForSoju</td><td>3249</td></tr><tr class="entry"><td>KAIST GoN</td><td>3092</td></tr><tr class="entry"><td>PartOfShellphish</td><td>3041</td></tr><tr class="entry"><td>Rex on the Beach</td><td>2986</td></tr><tr class="entry"><td>samurai</td><td>2870</td></tr><tr class="entry"><td>0x8F</td><td>2842</td></tr><tr class="entry"><td>Hacknam Style</td><td>2821</td></tr><tr class="entry"><td>shinh</td><td>2524</td></tr></tbody>
-	</table>
+    <table id="mini-scoreboard">
+        <tbody>
+        </tbody>
+    </table>
 </div>
 
 </div><!-- .col-lg-3 -->
@@ -945,41 +96,27 @@ closed unexceptedly.</p></div>
 
         <div id="footer">
             <div class="container">
-                <p>© 2014 HITCON</p>
-				<p>Contact: hitconctfcontact (at) hitcon.org</p>
+                <p>&copy; 2014 HITCON</p>
+                <p>Contact: hitconctfcontact (at) hitcon.org</p>
             </div>
         </div>
 
-		<script src="dashboard_files/jquery-2.js"></script>
-		<script src="dashboard_files/bootstrap.js"></script>
-        <script src="dashboard_files/plugins.js"></script>
-        <script src="dashboard_files/main.js"></script>
+        <script src="/static/js/vendor/jquery-2.1.1.min.js"></script>
+        <script src="/static/js/vendor/bootstrap-3.1.1.min.js"></script>
+        <script src="/static/js/plugins.js"></script>
+        <script src="/static/js/main.js"></script>
 
         
-<script src="dashboard_files/jquery.js"></script>
-<script src="dashboard_files/pidcrypt_c.js"></script>
-<script src="dashboard_files/pidcrypt_util_c.js"></script>
-<script src="dashboard_files/sha256_c.js"></script>
-<script src="dashboard_files/jsbn_c.js"></script>
-<script src="dashboard_files/rng_c.js"></script>
-<script src="dashboard_files/prng4_c.js"></script>
-<script src="dashboard_files/asn1_c.js"></script>
-<script src="dashboard_files/rsa_c.js"></script>
-<script src="dashboard_files/encflag.js"></script>
-<script>
-var team_id = 1017;
-</script>
-<script src="dashboard_files/dashboard.js"></script>
-
-
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-52390402-1');ga('send','pageview');
-        </script>
-    
-
-</body></html>
+<script src="/static/js/vendor/fancybox/jquery.fancybox.pack.js"></script>
+<script src="/static/js/vendor/pidcrypt/pidcrypt_c.js"></script>
+<script src="/static/js/vendor/pidcrypt/pidcrypt_util_c.js"></script>
+<script src="/static/js/vendor/pidcrypt/sha256_c.js"></script>
+<script src="/static/js/vendor/pidcrypt/jsbn_c.js"></script>
+<script src="/static/js/vendor/pidcrypt/rng_c.js"></script>
+<script src="/static/js/vendor/pidcrypt/prng4_c.js"></script>
+<script src="/static/js/vendor/pidcrypt/asn1_c.js"></script>
+<script src="/static/js/vendor/pidcrypt/rsa_c.js"></script>
+<script src="/static/js/encflag.js"></script>
+<script src="/static/js/dashboard.js"></script>
+    </body>
+</html>

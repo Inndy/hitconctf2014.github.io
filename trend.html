@@ -2,9 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>HITCON CTF 2014</title>
@@ -12,34 +11,34 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="trend_files/normalize.css">
-		<link rel="stylesheet" href="trend_files/bootstrap.css">
-		<link rel="stylesheet" href="trend_files/css.css">
-        <link rel="stylesheet" href="trend_files/main.css">
+        <link rel="stylesheet" href="/static/css/normalize.css">
+        <link rel="stylesheet" href="/static/css/bootstrap-3.1.1.min.css">
+        <link rel='stylesheet' href='/static/css/opensans-v9.css'>
+        <link rel="stylesheet" href="/static/css/main.css">
         
-        <script src="trend_files/analytics.js"></script><script src="trend_files/modernizr-2.js"></script>
+        <script src="/static/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-		<nav id="top-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="container">
-                <a class="navbar-brand" href="index.html">HITCON CTF 2014</a>
+        <nav id="top-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="/">HITCON CTF 2014</a>
                 <ul class="nav navbar-nav">
                     
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="scoreboard.html">Scoreboard</a></li>
-                    <li><a href="trend.html">Trend</a></li>
+                    <li><a href="/dashboard.html">Dashboard</a></li>
+                    <li><a href="/scoreboard.html">Scoreboard</a></li>
+                    <li><a href="/trend.html">Trend</a></li>
                     
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a id="timer" href="#">Contest is over</a>
-                        <input id="contest_start_time" value="1408161600.0" type="hidden">
-                        <input id="contest_end_time" value="1408334400.0" type="hidden">
-                        <input id="current_time" value="1408349059.502765" type="hidden">
+                        <a id="timer" href="#"></a>
+                        <input type="hidden" id="contest_start_time" value="1408161600.0">
+                        <input type="hidden" id="contest_end_time" value="1408334400.0">
+                        <input type="hidden" id="current_time" value="1408465442.362822">
                     </li>
                 </ul>
             </div>
@@ -51,40 +50,30 @@
         <div id="content" class="container">
             
 <p>Updates every 30 seconds.</p>
-<p id="last_update">Last Update: 2014-08-18 08:04:06 UTC</p>
-<div style="padding: 0px; position: relative;" id="trend"><canvas height="500" width="1140" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1140px; height: 500px;" class="flot-base"></canvas><div style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);" class="flot-text"><div style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;" class="flot-x-axis flot-x1-axis xAxis x1Axis"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 114px; top: 482px; left: 21px; text-align: center;">0:00</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 114px; top: 482px; left: 147px; text-align: center;">5:33</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 114px; top: 482px; left: 271px; text-align: center;">11:07</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 114px; top: 482px; left: 398px; text-align: center;">16:40</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 114px; top: 482px; left: 524px; text-align: center;">22:13</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 114px; top: 482px; left: 651px; text-align: center;">27:47</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 114px; top: 482px; left: 778px; text-align: center;">33:20</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 114px; top: 482px; left: 905px; text-align: center;">38:53</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 114px; top: 482px; left: 1031px; text-align: center;">44:27</div></div><div style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;" class="flot-y-axis flot-y1-axis yAxis y1Axis"><div class="flot-tick-label tickLabel" style="position: absolute; top: 469px; left: 20px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 391px; left: 2px; text-align: right;">1000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 313px; left: 2px; text-align: right;">2000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 235px; left: 2px; text-align: right;">3000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 156px; left: 2px; text-align: right;">4000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 78px; left: 2px; text-align: right;">5000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 2px; text-align: right;">6000</div></div></div><canvas height="500" width="1140" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1140px; height: 500px;" class="flot-overlay"></canvas><div class="legend"><div style="position: absolute; width: 185px; height: 314px; top: 13px; left: 36px; background-color: rgb(255, 255, 255); opacity: 0.85;"> </div><table style="position:absolute;top:13px;left:36px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(237,194,64);overflow:hidden"></div></div></td><td class="legendLabel">fuzzi3: 5249</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(175,216,248);overflow:hidden"></div></div></td><td class="legendLabel">Dragon Sector: 5151</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(203,75,75);overflow:hidden"></div></div></td><td class="legendLabel">9447: 4949</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(77,167,77);overflow:hidden"></div></div></td><td class="legendLabel">penthackon: 4871</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(148,64,237);overflow:hidden"></div></div></td><td class="legendLabel">blue-lotus: 4749</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(189,155,51);overflow:hidden"></div></div></td><td class="legendLabel">0ops: 4592</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(140,172,198);overflow:hidden"></div></div></td><td class="legendLabel">tomcr00se: 4421</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(162,60,60);overflow:hidden"></div></div></td><td class="legendLabel">More Smoked Leet Chicken: 4149</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(61,133,61);overflow:hidden"></div></div></td><td class="legendLabel">BambooFox: 3620</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(118,51,189);overflow:hidden"></div></div></td><td class="legendLabel">PPP: 3615</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(255,232,76);overflow:hidden"></div></div></td><td class="legendLabel">CLGT: 3571</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(210,255,255);overflow:hidden"></div></div></td><td class="legendLabel">Tasteless: 3571</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(243,90,90);overflow:hidden"></div></div></td><td class="legendLabel">HackingForSoju: 3249</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(92,200,92);overflow:hidden"></div></div></td><td class="legendLabel">KAIST GoN: 3092</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(177,76,255);overflow:hidden"></div></div></td><td class="legendLabel">PartOfShellphish: 3041</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(142,116,38);overflow:hidden"></div></div></td><td class="legendLabel">Rex on the Beach: 2986</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(105,129,148);overflow:hidden"></div></div></td><td class="legendLabel">samurai: 2870</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(121,45,45);overflow:hidden"></div></div></td><td class="legendLabel">0x8F: 2842</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(46,100,46);overflow:hidden"></div></div></td><td class="legendLabel">Hacknam Style: 2821</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(88,38,142);overflow:hidden"></div></div></td><td class="legendLabel">shinh: 2524</td></tr></tbody></table></div></div>
-<div style="display: none;" id="trend_tooltip"></div>
+<p id="last_update"></p>
+<div id="trend"></div>
+<div id="trend_tooltip"></div>
 
         </div>
 
         <div id="footer">
             <div class="container">
-                <p>© 2014 HITCON</p>
-				<p>Contact: hitconctfcontact (at) hitcon.org</p>
+                <p>&copy; 2014 HITCON</p>
+                <p>Contact: hitconctfcontact (at) hitcon.org</p>
             </div>
         </div>
 
-		<script src="trend_files/jquery-2.js"></script>
-		<script src="trend_files/bootstrap.js"></script>
-        <script src="trend_files/plugins.js"></script>
-        <script src="trend_files/main.js"></script>
+        <script src="/static/js/vendor/jquery-2.1.1.min.js"></script>
+        <script src="/static/js/vendor/bootstrap-3.1.1.min.js"></script>
+        <script src="/static/js/plugins.js"></script>
+        <script src="/static/js/main.js"></script>
 
         
-<script type="text/javascript" src="trend_files/jquery_003.js"></script>
-<script type="text/javascript" src="trend_files/jquery.js"></script>
-<script type="text/javascript" src="trend_files/jquery_004.js"></script>
-<script type="text/javascript" src="trend_files/jquery_002.js"></script>
-<script type="text/javascript" src="trend_files/trend.js"></script>
+<script type="text/javascript" src="/static/js/vendor/jquery.flot.min.js"></script>
+<script type="text/javascript" src="/static/js/vendor/jquery.flot.crosshair.min.js"></script>
+<script type="text/javascript" src="/static/js/vendor/jquery.flot.resize.min.js"></script>
+<script type="text/javascript" src="/static/js/vendor/jquery.flot.time.min.js"></script>
+<script type="text/javascript" src="/static/js/trend.js"></script>
+    </body>
+</html>
 
-
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-52390402-1');ga('send','pageview');
-        </script>
-    
-
-</body></html>
